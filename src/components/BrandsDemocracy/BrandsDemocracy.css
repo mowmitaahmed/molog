@@ -13,7 +13,19 @@
     color: #666666;
 }
 .single_brands_democracy{
-    min-height: 353px;
+    min-height: 322px;
+    position: relative;
+}
+/* .single_brands_democracy .sl{
+    position: absolute;
+    top: -18px;
+    left: 43%;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #2e5bff;
+    color: white;
+    padding: 4px;
 }
 .single_brands_democracy span.material-icons{
     font-weight: 400;
@@ -34,10 +46,10 @@
     font-size: 14px;
     line-height: 22px;
     color: #666666;
-}
+} */
 
 /* Button */
-.single_brands_democracy a{
+/* .single_brands_democracy a{
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 14px;
@@ -85,7 +97,4 @@
     -webkit-transform: scaleX(1);
     -ms-transform: scaleX(1);
     transform: scaleX(1);
-}
-/* .hvr-underline-from-left:before {
-    background: #222222;
 } */

@@ -16,28 +16,36 @@ const CarouselArea = () => {
       infinite: true,
       speed: 500,
       slidesToShow: 5,
+      arrows: false,
       slidesToScroll: 1
     };
     const sliderArray = [
         {
+            id: 1,
             img: Slider1
         },
         {
+            id: 2,
             img: Slider2
         },
         {
+            id: 3,
             img: Slider3
         },
         {
+            id: 4,
             img: Slider4
         },
         {
+            id: 5,
             img: Slider5
         },
         {
+            id: 6,
             img: Slider6
         },
         {
+            id: 7,
             img: Slider7
         }
     ]
@@ -48,17 +56,19 @@ const CarouselArea = () => {
                 <div className="row">
                     <div className="col-md-12">
                         <div className="row py-4">
-                            <Slider {...settings}>
-                                {
-                                    sliderArray.map(slide => (
-                                        <div className="col-md-3 col-sm-6">
-                                            <div className="single_slider p-2 d-flex justify-content-center">
-                                                <img src={slide.img} alt=""/>
+                            <div className="col-md-12">
+                                <Slider {...settings}>
+                                    {
+                                        sliderArray.map(slide => (
+                                            <div key={slide.id} className="col-md-3 col-sm-6">
+                                                <div className="single_slider p-2 d-flex justify-content-center">
+                                                    <img className="me-2" src={slide.img} alt={slide.img} />
+                                                </div>
                                             </div>
-                                        </div>
-                                        ))
-                                }
-                            </Slider>
+                                            ))
+                                    }
+                                </Slider>
+                            </div>
                         </div>
                     </div>
                 </div>

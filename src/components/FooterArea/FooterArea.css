@@ -9,7 +9,7 @@ footer {
   }
 
   /* Footer Top */
-  .footer_top hr, .footer_bottom hr{
+  .footer_middle hr, .footer_bottom hr{
     /* border: 1px solid #ffffff6e; */
     border: 1px solid #66666691;
   }
@@ -108,7 +108,7 @@ footer {
   line-height: 14px;
 }
   /* Footer Bottom */
-  .footer_bottom p{
+  .footer_bottom p, .footer_bottom ul li a{
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 13px;

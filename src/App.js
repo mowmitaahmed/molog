@@ -12,6 +12,7 @@ import Brands from './components/Brands/Brands';
 import HowItWorks from './components/HowItWorks/HowItWorks';
 import Faq from './components/FAQ/Faq';
 import Blog from './components/Blog/Blog';
+import NotFound from './components/NotFound/NotFound';
 export const FooterHeightContext = createContext();
 
 function App() {
@@ -43,6 +44,9 @@ function App() {
             </Route>
             <Route path="/blog">
               <Blog />
+            </Route>
+            <Route path="*">
+              <NotFound />
             </Route>
           </Switch>
       </Router>

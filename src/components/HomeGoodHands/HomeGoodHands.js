@@ -1,37 +1,26 @@
 import React from 'react';
 import './HomeGoodHands.css';
+import Fade from 'react-reveal/Fade';
 
 const HomeGoodHands = () => {
     const GoodHandsArray =[
         {
-            icon: 'fas fa-chart-area p-3',
-            title: 'Strategy & Planning',
-            desc: 'The Little-known Way To Increasing Your Traffic Without Content'
+            id: 1,
+            icon: 'fas fa-user p-3',
+            title: 'Anyone can join!',
+            desc: 'No minimum followers. Let your content do the talking.'
         },
         {
-            icon: 'fas fa-anchor p-3',
-            title: 'B2B Public Relations',
-            desc: 'The Little-known Way To Increasing Your Traffic Without Content'
-        },
-        {
-            icon: 'fab fa-slack p-3',
-            title: 'Digital Marketing',
-            desc: 'The Little-known Way To Increasing Your Traffic Without Content'
-        },
-        {
-            icon: 'fas fa-trophy p-3',
-            title: 'Award-Winning Team',
-            desc: 'The Little-known Way To Increasing Your Traffic Without Content'
-        },
-        {
-            icon: 'fas fa-rocket p-3',
-            title: 'Marketing Automation',
-            desc: 'The Little-known Way To Increasing Your Traffic Without Content'
-        },
-        {
+            id: 2,
             icon: 'fas fa-flask p-3',
-            title: 'Content Creation',
-            desc: 'The Little-known Way To Increasing Your Traffic Without Content'
+            title: 'Easy to use',
+            desc: 'Discover exciting campaigns, submit photos, and craft captions all in one app.'
+        },
+        {
+            id: 3,
+            icon: 'fas fa-trophy p-3',
+            title: 'Withdraw instantly',
+            desc: 'Withdraw your earnings securely to your bank account with just one tap.'
         }
     ]
     return (
@@ -40,31 +29,35 @@ const HomeGoodHands = () => {
                 <div className="row text-center pt-5 pb-3">
                     <div className="col-md-3 col-sm-12"></div>
                     <div className="col-md-6 col-sm-12">
-                        <div className="good_hands_details">
-                            <h2 className="h2-responsive">You’re in good hands</h2>
-                            <p>First see how your businesses are performing today. <br/> Then do more with insights from Webify team.</p>
-                        </div>
+                        <Fade cascade>
+                            <div className="good_hands_details">
+                                <h2 className="h2-responsive">Click, post, earn !</h2>
+                                <p>Select a campaign you like and submit your post for the brand’s approval. Once it's approved, share it on social media to start earning!</p>
+                            </div>
+                        </Fade>
                     </div>
                     <div className="col-md-3 col-sm-12">
                     </div>
                 </div>
-                <div className="row pb-5">
-                    {
-                        GoodHandsArray.map(good => (
-                            <div className="col-md-4 col-sm-12">
-                                <div className="single_good_hands d-flex justify-content-center p-3">
-                                    <div className="icon_box text-center me-2">
-                                       <i className={good.icon}></i>
-                                    </div>
-                                    <div className="single_good_hands_details">
-                                        <h3 className="h3-responsive">{good.title}</h3>
-                                        <p className="p-responsive">{good.desc}</p>
+                <Fade cascade>
+                    <div className="row pb-5">
+                        {
+                            GoodHandsArray.map(good => (
+                                <div key={good.id} className="col-md-4 col-sm-12">
+                                    <div className="single_good_hands d-flex justify-content-center p-3">
+                                        <div className="icon_box text-center me-2">
+                                        <i className={good.icon}></i>
+                                        </div>
+                                        <div className="single_good_hands_details">
+                                            <h3 className="h3-responsive">{good.title}</h3>
+                                            <p className="p-responsive">{good.desc}</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        ))
-                    }
-                </div>
+                            ))
+                        }
+                    </div>
+                </Fade>
             </div>
         </section>
     );

@@ -18,7 +18,7 @@ const JoinCommunity = () => {
         marginBottom: 0,
     };
     return (
-        <section className="bg-white" style={mB ? {MarginBottomZero} : MarginBottom}>
+        <section className="bg-white" style={mB ? MarginBottomZero : MarginBottom}>
             <hr className="my-0" />
             <div className="container py-5">
                 <div className="row text-center py-4">
@@ -30,7 +30,7 @@ const JoinCommunity = () => {
                               </div>
                               <hr className="my-0"/>
                               <div className="join_item_action bg-light py-3">
-                                   <Link to="/contact" className="text-decoration-none text-secondary" target="_self">Join the Forum</Link>
+                                   <Link to="/contact" className="text-decoration-none text-secondary" target="_self">For Influencers</Link>
                               </div>
                         </div>
                     </div>
@@ -42,7 +42,7 @@ const JoinCommunity = () => {
                               </div>
                               <hr className="my-0"/>
                               <div className="join_item_action bg-light py-3">
-                                   <Link to="/contact" className="text-decoration-none text-secondary" target="_self">support@themebubble.com</Link>
+                                   <Link to="/contact" className="text-decoration-none text-secondary" target="_self">contact@everipost.com</Link>
                               </div>
                         </div>
                     </div>

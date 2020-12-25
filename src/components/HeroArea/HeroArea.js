@@ -1,24 +1,36 @@
 import React from 'react';
 import Mac from '../../images/mac.png';
 import './HeroArea.css';
+import Fade from 'react-reveal/Fade';
 
 const HeroArea = () => {
     return (
         <section className="hero_area">
             <div className="container">
                 <div className="row hero">
-                    <div className="col-md-2"></div>
-                    <div className="col-md-8">
-                        <div className="hero_details text-center text-white">
-                            <h1 className="h1-responsive">Experience The Power Of Word-Of-Mouth Marketing At Large Scale</h1>
-                            <p className="p-responsive py-2">Internet gives you full power to target any potential prospects in the world. You can reach out to people to any country.</p>
-                            <button className="btn bg-white rounded border px-4 py-2 hvr-shadow mb-5" type="submit">FREE CONSULTATION</button>
-                        </div>
-                        <div className="hero_image">
+                    <div className="col-md-2 col-sm-12"></div>
+                    <div className="col-md-8 col-sm-12">
+                        <Fade cascade>
+                            <div className="hero_details text-center text-white">
+                                <h1 className="h1-responsive">EXPERIENCE THE POWER OF WORD-OF-MOUTH MARKETING AT LARGE SCALE</h1>
+                                <p className="p-responsive py-2">Everipost with data-driven approach gives you full power to reach your potential audience with nano,micro,macro & mega influencers.</p>
+                                <button className="btn bg-white rounded border px-4 py-2 hvr-shadow mb-3" type="submit">FREE CONSULTATION</button>
+                            </div>
+                        </Fade>
+                        {/* <div className="hero_image">
+                            <img className="img-fluid pt-4" src={Mac} alt={Mac} />
+                        </div> */}
+                    </div>
+                    <div className="col-md-2 col-sm-12"></div>
+                </div>
+                <div className="row">
+                    <div className="col-md-2 col-sm-12"></div>
+                    <div className="col-md-8 col-sm-12">
+                        <div className="hero_image text-center">
                             <img className="img-fluid pt-4" src={Mac} alt={Mac} />
                         </div>
                     </div>
-                    <div className="col-md-2"></div>
+                    <div className="col-md-2 col-sm-12"></div>
                 </div>
             </div>
             {/* Circle Animation */}

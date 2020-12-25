@@ -1,9 +1,9 @@
 import React from 'react';
 import Navbar from '../../components/Navbar/Navbar';
-import AboutBusinessBetter from '../AboutBusinessBetter/AboutBusinessBetter';
+// import AboutBusinessBetter from '../AboutBusinessBetter/AboutBusinessBetter';
 import AboutHero from '../AboutHero/AboutHero';
-import AboutParallax from '../AboutParallax/AboutParallax';
-import AboutServeYou from '../AboutServeYou/AboutServeYou';
+// import AboutParallax from '../AboutParallax/AboutParallax';
+// import AboutServeYou from '../AboutServeYou/AboutServeYou';
 import AboutStrongCustomer from '../AboutStrongCustomer/AboutStrongCustomer';
 import CarouselArea from '../CarouselArea/CarouselArea';
 import FooterArea from '../FooterArea/FooterArea';
@@ -16,9 +16,9 @@ const AboutUs = () => {
             <AboutHero />
             <CarouselArea />
             <AboutStrongCustomer />
-            <AboutParallax />
+            {/* <AboutParallax />
             <AboutBusinessBetter />
-            <AboutServeYou />
+            <AboutServeYou /> */}
             <FooterArea />
         </div>
     );

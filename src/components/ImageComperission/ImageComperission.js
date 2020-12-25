@@ -18,15 +18,15 @@ const ImageComperission = () => {
                             }}
                         />
                     </div>
-                    <div className="col-md-6 image_comparission_details ps-5 py-4">
-                        <h2 className="mt-4 mb-3">We analyze your business from every direction.</h2>
+                    <div className="col-md-6 image_comparission_details ps-5 pt-0 pb-3">
+                        <h2 className="mt-4 mb-3">Everipost analyse influencers from every direction</h2>
                         <ul className="list-unstyled">
-                            <li className="my-2"><span className="material-icons">check_circle</span> Wollo Token Sale Starts 5th September at Midday</li>
-                            <li className="my-2"><span className="material-icons">check_circle</span> Educating children about the future of money</li>
-                            <li className="my-2"><span className="material-icons">check_circle</span> World’s first token sale with a tangible reward</li>
+                            <li className="my-2"><span className="material-icons">check_circle</span> Meaningful metrics -Lose the illusion of follower numbers and discover who truly drives engagement.</li>
+                            <li className="my-2"><span className="material-icons">check_circle</span> Intelligent mapping- With the power of AI algorithms along with Machine learning , You’d be able to track the real time insights and also the top performing influencer list who can be engaged for future campaigns too.</li>
+                            <li className="my-2"><span className="material-icons">check_circle</span> Real time performance indicators and complex data crunching, rest assured, you will be making the most valuable decisions possible.</li>
                         </ul>
-                        <button type="button" className="btn text-white me-4 my-2 py-2 px-4 hvr-float-shadow">Get A Free Consultation</button>
-                        <button type="button" className="btn light_button my-2 py-2 px-4">Learn More</button>
+                        <button type="button" className="btn text-white me-4 my-2 py-2 px-4 hvr-float-shadow">Get Started</button>
+                        {/* <button type="button" className="btn light_button my-2 py-2 px-4">Learn More</button> */}
                     </div>
                 </div>
             </div>

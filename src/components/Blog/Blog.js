@@ -4,6 +4,7 @@ import HeroBlog from '../HeroBlog/HeroBlog';
 import Navbar from '../Navbar/Navbar';
 import FooterArea from '../FooterArea/FooterArea';
 import './Blog.css';
+import ScrollToTop from '../ScrollToTop/ScrollToTop';
 
 const Blog = () => {
     return (
@@ -12,6 +13,7 @@ const Blog = () => {
             <HeroBlog />
             <BlogMainArea />
             <FooterArea />
+            <ScrollToTop />
         </div>
     );
 };

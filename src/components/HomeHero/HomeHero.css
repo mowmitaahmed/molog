@@ -1,7 +1,7 @@
 /* Home Hero Area */
 .home_hero_area{
     width: 100%;
-    min-height: 760px;
+    min-height: 780px;
 }
 .home_hero_area h1{
     font-family: 'Poppins', sans-serif;
@@ -44,4 +44,9 @@
     font-size: 15px;
     line-height: 22px;
     color: #ffffff;
+}
+@media (max-width: 600px){
+    .hero_image img{
+        width: 95%;
+    }
 }

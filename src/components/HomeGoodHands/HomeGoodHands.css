@@ -38,7 +38,8 @@
     transition: all 0.3s cubic-bezier(0.77, 0, 0.2, 2.25);
 }
 .icon_box i{ 
-    color: #f16334;
+    /* color: #f16334; */
+    color: #2e5bff;
     font-size: 25px;
     line-height: 25px;
 }

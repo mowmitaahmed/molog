@@ -8,6 +8,7 @@ import Blog5 from '../../images/blog/blog5.jpg';
 import Blog6 from '../../images/blog/blog6.jpg';
 import Blog7 from '../../images/blog/blog7.jpg';
 import './BlogPosts.css';
+import Fade from 'react-reveal/Fade';
 
 const BlogPosts = () => {
     const BlogArray = [
@@ -58,7 +59,8 @@ const BlogPosts = () => {
         }
     ]
     return (
-        <div className="container">
+        <div className="container">   
+            <Fade cascade>
             <div className="row">
                 {
                    BlogArray.map(blog => {
@@ -102,7 +104,8 @@ const BlogPosts = () => {
                       }
                    })
                 }
-            </div>
+                </div>
+            </Fade>
         </div>
     );
 };

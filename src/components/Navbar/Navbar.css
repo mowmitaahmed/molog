@@ -1,8 +1,12 @@
+.nav_area{
+    /* min-height: 65px; */
+}
+
 .navbar-brand img{
     width: 45px;
     /* height: 31px; */
 }
-.navbar-nav li a{
+.nav_area ul li a, .nav-link{
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     font-weight: 300;
@@ -14,5 +18,57 @@
     font-size: 14px;
     font-weight: 500;
     line-height: 21px;
+    color: #ffffff!important;
+    background: #2e5bff;
+}
+.hvr-grow-shadow:hover, .hvr-grow-shadow:focus, .hvr-grow-shadow:active {
+    box-shadow: 0 10px 10px -10px #2e5bffab!important;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+/* @media screen and (max-width: 768px) {
+    #myNavBar {background-color: #006495;height: auto;padding: 12px 0px;}
+    .navbar-header{ height: 74px;}
+    #myNavBar a{height:auto;}
+    .navbar-nav {margin: 0px auto !important;}
+    #mainNavbar > li {margin-left: 0px;border-radius: 4px;margin-top:7px;}
+    #callToActionBtnSecondary{padding: 10px;}
+    #calltoactiondiv{padding:10px;}
+    #testimonials h1{padding: 0px;margin: 0px auto;}
+   .jumbotron{padding-top:0px !important;}
+    } */
+    /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    
+.navbar-nav li a, .nav-link{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
     color: #222222!important;
+}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    
+.navbar-nav li a, .nav-link{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    color: #222222!important;
+}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    
+.navbar-nav li a, .nav-link{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    color: #222222!important;
+}
 }
