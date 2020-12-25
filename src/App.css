@@ -41,9 +41,9 @@ p{
   padding-bottom: 2px;
   /* visibility: visible; */
 }
-.show{
+/* .show{
   visibility: hidden;
-}
+} */
 #backToTop {
   visibility:hidden;
   top:calc(100% / 2);
